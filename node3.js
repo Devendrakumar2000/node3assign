@@ -20,6 +20,7 @@ const middleware2=function(req,res,next){
 
 app.use(middleware2); // by using this line we use middleware for all apis or global for all apis
 
+// here we can use specific middleware on specific apis
 app.get("/",middleware1,(req,res)=>{
     res.send("<h1>This is the main page with middleware 1 and middleware2 <h1>")
 })
